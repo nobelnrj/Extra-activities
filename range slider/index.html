@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./script.js"></script>
+    <title>Range slider</title>
+    <style>
+        .slidecontainer {
+            width: 300px;
+        }
+
+        .slider {
+            -webkit-appearance: none;
+            width: 200px;
+            height: 5px;
+            background: -webkit-gradient(
+                linear,
+                left top,
+                right top,
+                color-stop(0.6, #23c0f5),
+                color-stop(0.6, #c4cdd5)
+            );
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+
+        .slider:hover {
+            opacity: 1;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #ffffff;
+            border: solid 1px #c4cdd5;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .slider::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            background: #ffffff;
+            border: solid 1px #c4cdd5;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .value{
+            width: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="slidecontainer">
+        <p>Max per month</p>
+        <input type="range" min="1" max="5000" value="3200" class="slider">
+        <input type="text" class="value">
+    </div>
+    <div class="slidercontainer">
+        <p>Max points/credit</p>
+        <input type="range" min="1" max="5000" value="3200" class="slider">
+        <input type="text" class="value">
+    </div>
+    
+</body>
+</html>

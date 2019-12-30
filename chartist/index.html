@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <title>Document</title>
+    <style>
+        /* Use this selector to override the line style on a given series */
+        .ct-series-a .ct-line {
+        /* Set the colour of this series line */
+        stroke: #63a5ef;
+        /* Control the thikness of your lines */
+        stroke-width: 2px;
+        /* Create a dashed line with a pattern */
+        }
+
+        /* This selector overrides the points style on line charts. Points on line charts are actually just very short strokes. This allows you to customize even the point size in CSS */
+        .ct-series-a .ct-point {
+        /* Colour of your points */
+        stroke: #63a5ef;
+        /* Size of your points */
+        stroke-width: 15px;
+        /* Make your points appear as squares */
+        stroke-linecap: round;
+        }
+    </style>
+</head>
+<body>
+    <div class="ct-chart ct-perfect-fourth"></div>
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+    <script>
+        var chart = new Chartist.Line('.ct-chart', {
+            series: [
+                {
+                    name: 'series-1',
+                data: [
+                    {x: new Date(143134652600), y: 43},
+                    {x: new Date(143234652600), y: 40},
+                    {x: new Date(143340052600), y: 45},
+                    {x: new Date(143366652600), y: 40},
+                    {x: new Date(143410652600), y: 20},
+                    {x: new Date(143508652600), y: 32},
+                    {x: new Date(143569652600), y: 18},
+                    {x: new Date(143579652600), y: 11}
+                ]
+                }
+            ]
+            }, {
+            axisX: {
+                type: Chartist.FixedScaleAxis,
+                divisor: 8,
+                labelInterpolationFnc: function(value) {
+                return moment(value).format('D MMM');
+                },
+                labelOffset: {
+                    x: -10,
+                    y: 10
+                }
+            },
+            axisY: {
+                onlyInteger: true,
+                offset: 20,
+                labelOffset: {
+                    x: 0,
+                    y: 5
+                }
+            },
+            low: 10,
+            high: 50,
+            width: 800,
+            height: 300,
+            fullWidth: true
+        });
+    </script>
+</body>
+</html>

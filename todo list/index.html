@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="modal">
+            <div class="modal_content">
+                <span class="closebtn" onclick="closeModel()">&times;</span>
+                <input type="text" class="myInput" onclick="animate()">
+                <label class="placeholder">Enter the content to add to TODO list</label>
+                <button class="modalBtn" onclick="addTodo()">ADD</button>
+            </div>
+        </div>
+        <div class="todo_container">
+            <div class="todo_header clearfix">
+                <h1 class="heading">To do List <span class="value">0</span></h1>
+                <button class="addBtn" onclick="openModal()">+</button>
+            </div>
+            <ul class="todo_body" title="click to complete and dblclick to delete">
+                <li class="clearfix">
+                    <p class="todo_content">Prepare for presentation</p>
+                </li>
+                <li class="clearfix">
+                    <p class="todo_content">Remind John to email the customer Jessie Lee</p>
+                </li>
+                <li class="clearfix">
+                    <p class="todo_content">Pek assigned you a task Make a sales report</p>
+                </li>
+                <li class="clearfix">
+                    <p class="todo_content">Prepare for presentation</p>                
+                </li>
+                <li class="clearfix">
+                    <p class="todo_content">Prepare for presentation</p>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

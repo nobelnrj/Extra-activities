@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .hero-container{
+            background: url(https://images.unsplash.com/photo-1574482550419-2dab78b38637?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+            background-size: cover;
+            height: 100vh;
+            padding: 100px 20px;
+        }
+        .hero-content{
+            color: #ffffff;
+            opacity: 0;
+            transform: translateX(-40px);
+            transition: 2s all ease;
+        }
+        .visible{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-container">
+        <div class="hero-content">
+            <h1>Heading1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, quos.</p>
+        </div>
+    </div>
+</body>
+<script>
+    window.onload = function(){
+        document.querySelector('.hero-content').classList.add("visible");
+        console.log('class added');
+    };
+</script>
+</html>

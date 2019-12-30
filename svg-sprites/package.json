@@ -1,0 +1,20 @@
+{
+  "name": "svg-sprites",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-svg-sprite": "^1.5.0"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cheerio": "^1.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-svgmin": "^2.2.0"
+  }
+}
