@@ -1,0 +1,19 @@
+.mobile-container{
+    max-width:375px;
+    margin:0 auto;
+    background-color: #fff;
+}
+
+.clearfix::after{
+    clear:both;
+    display: block;
+    content: '';
+}
+.chevron-up{
+    transform: rotate(180deg);
+}
+hr{
+	border: none;
+	height: 1px;
+    background-color:#f4f4f4;
+}

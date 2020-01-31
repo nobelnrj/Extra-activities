@@ -1,0 +1,162 @@
+.highcharts-credits{
+    display: none;
+}
+
+.highcharts-input-group{
+    display: none;
+}
+
+.highcharts-point-up{
+    fill: #9d7ffe;
+    stroke: #9d7ffe;
+    stroke-width: 1;
+}
+
+.highcharts-point-down{
+    fill: #39d3ec;
+    stroke: #39d3ec;
+    stroke-width: 1;
+}
+
+.highcharts-yaxis{
+    display: none;
+}
+
+rect.highcharts-point{
+    fill: #eff2fc;
+}
+
+.chart-wrapper{
+    width: 700px;
+    height: 500px;
+}
+
+/* GENERAL */
+
+.chart {
+    float: left;
+    max-height: 800px;
+    height: 75vh;
+    position: relative;
+    width: 100%;
+}
+
+.highcharts-draw-mode {
+    cursor: crosshair;
+}
+
+.left {
+    float: left;
+}
+
+.right,
+.highcharts-stocktools-toolbar li.right {
+    float: right;
+}
+
+/* GUI */
+
+.highcharts-stocktools-toolbar {
+    margin: 0px 0px 0px 10px;
+    padding: 0px;
+    width: calc(100% - 63px);
+}
+
+.highcharts-stocktools-toolbar li {
+    background-color: #f7f7f7;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 40px;
+    list-style: none;
+    margin-right: 2px;
+    margin-bottom: 3px;
+    padding: 0px;
+    position: relative;
+    width: auto;
+}
+
+.highcharts-stocktools-toolbar li ul {
+    display: none;
+    left: 0px;
+    padding-left: 0px;
+    position: absolute;
+    z-index: 125;
+}
+
+.highcharts-stocktools-toolbar li:hover {
+    background-color: #e6ebf5;
+}
+
+.highcharts-stocktools-toolbar li:hover ul {
+    display: block;
+}
+
+.highcharts-stocktools-toolbar li ul li {
+    margin-bottom: 0px;
+    width: 160px;
+}
+
+.highcharts-stocktools-toolbar li>span.highcharts-menu-item-btn {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: block;
+    float: left;
+    height: 100%;
+    width: 40px;
+}
+
+.highcharts-stocktools-toolbar li>.highcharts-menu-item-title {
+    color: #666;
+    line-height: 40px;
+    font-size: 0.876em;
+    padding: 0px 10px 0px 5px;
+}
+li.highcharts-active {
+    background-color: #e6ebf5;
+}
+
+/* Responsive design */
+
+@media screen and (max-width: 1024px) {
+    .highcharts-stocktools-toolbar li>.highcharts-menu-item-title {
+        display: none;
+    }
+    .highcharts-stocktools-toolbar li ul li {
+        width: auto;
+    }
+}
+
+.highcharts-figure, .highcharts-data-table table {
+    min-width: 360px; 
+    max-width: 800px;
+    margin: 1em auto;
+}
+
+.highcharts-data-table table {
+	font-family: Verdana, sans-serif;
+	border-collapse: collapse;
+	border: 1px solid #EBEBEB;
+	margin: 10px auto;
+	text-align: center;
+	width: 100%;
+	max-width: 500px;
+}
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+.highcharts-data-table th {
+	font-weight: 600;
+    padding: 0.5em;
+}
+.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+    padding: 0.5em;
+}
+.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}

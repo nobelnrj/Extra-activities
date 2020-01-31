@@ -1,0 +1,32 @@
+.awbluedot{
+    text-align: center;
+    padding: 36px ;
+    .tagline{
+        color:#8d8d8d;
+        line-height: 24px;
+        font-size: 14px;
+        letter-spacing: -0.37px;
+        margin-bottom: 8px;
+    }
+    .bluedot-redirect{
+        margin-top:40px;
+        font-size: 13px;
+        line-height: 24px;
+        // metropolis medium font needed here
+        font-weight: 500;
+        letter-spacing: -0.34px;
+        color: #969696;
+        a{
+            color: #575757;
+            display: inline-block;
+            .bluedot{
+                width:12px;
+                height:12px;
+                border-radius: 50%;
+                margin-left: 6px;
+                background-color: $btn-color;
+                display: inline-block;
+            }
+        }
+    }
+}

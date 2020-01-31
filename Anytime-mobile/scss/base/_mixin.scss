@@ -1,0 +1,9 @@
+@mixin arrow-background(){
+    @each $item,$color in $arrow-background{
+      .category:nth-child(#{$item}){
+          .right-arrow{
+              background-color: $color;
+          }
+      }
+    }
+}

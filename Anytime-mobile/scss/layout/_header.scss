@@ -1,0 +1,27 @@
+.navigation-header{
+    display: flex;
+    position: fixed;
+    top:0;
+    z-index: 2;
+    background-color: $pure-color;
+    width: 380px;
+    padding: 14px 18px;
+    a{
+        color: $primary-color;
+        display: inline-block;
+        svg{
+            vertical-align: middle;
+        }
+        span{
+            letter-spacing: -0.4px;
+            vertical-align: middle;
+            margin-left:4px;
+        }
+        &.share-btn{
+            // need to add Metropolis Medium font for this to work
+            font-weight: 500;
+            margin-left:auto;
+            color: $links-color;
+        }
+    }
+}

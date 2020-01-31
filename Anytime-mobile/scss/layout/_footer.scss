@@ -1,0 +1,41 @@
+footer{
+    text-align: center;
+    padding:32px 0 24px;
+    button{
+        margin: 0 12px;
+        border-radius: 8px;
+        border: 0;
+        width: 130px;
+        height: 38px;
+        box-shadow: $box-shadow;
+        outline: none;
+        cursor: pointer;
+        i{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        &.share-btn{
+            color:$pure-color;
+            background-color:$btn-color;
+            i{
+                width:15px;
+                height: 20px;
+                svg{
+                    fill: $pure-color;
+                }
+            }
+        }
+        &.copy-link{
+            color:$links-color;
+            background-color: $pure-color;
+            i{
+                width:15px;
+                height:7px;
+                vertical-align: top;
+                svg{
+                    fill:$btn-color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+.business-hours{
+    > .header, > .days-list{
+        span:last-child{
+            margin-left:auto;
+            color:$primary-color;
+        }
+    }
+    > .header{
+        display: flex;
+        padding: 0 24px 24px;
+        border-bottom: solid 1px $border-color;
+    }
+    > .days-list{
+        padding:24px 24px 0;
+    }
+    h3 ~ a{
+        color:#a2a2a2;
+        width:14px;
+        height:14px;
+        display: inline-block;
+        margin-left: auto;
+        align-self: center;
+        transition: 0.2s all;
+    }
+    .open-now{
+        color:#379f3c;
+        font-size:18px;
+    }
+   + .time-zone{
+        text-align: center;
+        margin-bottom: 28px;
+        p{
+            font-size: 14px;
+            color:#b0b0b0;
+        }
+    }
+    ul{
+        list-style: none;
+        li{
+            display: flex;
+            margin-bottom:20px;
+            span.day{
+                font-weight: 300;
+            }
+            span:last-child{
+                margin-left:auto
+            }
+            &::last-child{
+                margin-bottom: 0;;
+            }
+        }
+    }
+    .current-day{
+        display: flex;
+        span:last-child{
+            margin-left:auto
+        }
+    }
+    .hide{
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+}
